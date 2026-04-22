@@ -1,0 +1,10 @@
+"uvicorn main:app --reload" --> is used to start the webserver
+while accessing the data we can either use the 
+    --->"localhost:8000/products"
+    --->"localhost:8000/docs" --> this will give in swagger with the better UI
+
+to run the frontend 
+    ---> in the terminal 
+        1) cd .\frontend\
+        2) npm start
+        
