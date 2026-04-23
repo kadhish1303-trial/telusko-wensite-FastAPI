@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 
 db_url = "postgresql://postgres:root1234@localhost:5432/telusko"
 engine = create_engine(db_url)
-Session = sessionmaker(autocommit = False, autoflash = False, bind = engine)
+session = sessionmaker(autocommit = False, autoflush = False, bind = engine)
 #sessionmaker 
 #   -->A configuration tool (factory) that creates a Session class.
 #   -->You don't want to manually configure your connection settings every time you need to talk to the DB.
